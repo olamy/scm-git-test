@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app-root</artifactId>
+  <packaging>pom</packaging>
+  <name>my-app-root</name>
+  <version>1.12-SNAPSHOT</version>
+  <scm>
+    <connection>scm:svn:http://57.200.1.171:7770/Test/olamy-test/trunk</connection>
+    <developerConnection>scm:svn:http://57.200.1.171:7770/Test/olamy-test/trunk</developerConnection>
+    <url>http://57.200.1.171:8080/viewrep/Accommons/olamy/trunk</url>
+  </scm>
+  <modules>
+    <module>my-app</module>
+    <module>my-app-webapp</module>
+  </modules>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.mycompany.app</groupId>
+        <artifactId>my-app</artifactId>
+        <version>${pom.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mycompany.app</groupId>
+        <artifactId>my-app-webapp</artifactId>
+        <version>${pom.version}</version>
+      </dependency>      
+    </dependencies>
+  </dependencyManagement>
+  <distributionManagement>
+    <repository>
+      <id>local.repo</id>
+      <name>file repository to svn</name>
+      <url>file://${user.dir}/mavenrepo</url>
+    </repository>
+    <snapshotRepository>
+      <id>local.repo</id>
+      <name>file repository to svn</name>
+      <url>file://${user.dir}/mavenreposnapshot</url>    
+    </snapshotRepository>
+  </distributionManagement>
+</project>
