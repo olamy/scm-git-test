@@ -2,7 +2,7 @@
   <parent>
     <artifactId>my-app-root</artifactId>
     <groupId>com.mycompany.app</groupId>
-    <version>1.12-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
@@ -10,15 +10,14 @@
   <name>Maven Quick Start Archetype</name>
     <url>http://maven.apache.org</url>
   <scm>
-    <connection>scm:svn:http://57.200.1.171:7770/Test/olamy-test/trunk/my-app</connection>
-    <developerConnection>scm:svn:http://57.200.1.171:7770/Test/olamy-test/trunk/my-app</developerConnection>
-    <url>http://57.200.1.171:8080/viewrep/Accommons/olamy/trunk/my-app</url>
+    <connection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test/my-app</connection>
+    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test/my-app</developerConnection>
   </scm>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>3.8.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
