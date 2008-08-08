@@ -27,16 +27,26 @@
       </dependency>      
     </dependencies>
   </dependencyManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>  
+        <artifactId>maven-release-plugin</artifactId>       
+        <version>2.0-beta-8-SNAPSHOT</version>
+      </plugin>
+    </plugins>
+ 
+  </build>
   <distributionManagement>
     <repository>
       <id>local.repo</id>
       <name>file repository to svn</name>
-      <url>file://${user.dir}/mavenrepo</url>
+      <url>file://${user.home}/mavenrepo</url>
     </repository>
     <snapshotRepository>
       <id>local.repo</id>
       <name>file repository to svn</name>
-      <url>file://${user.dir}/mavenreposnapshot</url>    
+      <url>file://${user.home}/mavenreposnapshot</url>    
     </snapshotRepository>
   </distributionManagement>
 </project>
