@@ -10,8 +10,8 @@
   <name>Maven Quick Start Archetype</name>
     <url>http://maven.apache.org</url>
   <scm>
-    <connection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test/my-app</connection>
-    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test/my-app</developerConnection>
+    <connection>scm:git:git://github.com/olamy/scm-git-test.git/my-app</connection>
+    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/my-app</developerConnection>
   </scm>
   <dependencies>
     <dependency>

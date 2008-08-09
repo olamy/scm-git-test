@@ -6,8 +6,8 @@
   <name>my-app-root</name>
   <version>1.3-SNAPSHOT</version>
   <scm>
-    <connection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test</connection>
-    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/olamy-test</developerConnection>
+    <connection>scm:git:git://github.com/olamy/scm-git-test.git/</connection>
+    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/</developerConnection>
   </scm>
   <modules>
     <module>my-app</module>
