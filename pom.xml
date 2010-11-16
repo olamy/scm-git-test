@@ -32,7 +32,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>  
         <artifactId>maven-release-plugin</artifactId>       
-        <version>2.1</version>
+        <version>2.2-SNAPSHOT</version>
         <configuration>
          <ignoreSnapshots>true</ignoreSnapshots>
         </configuration> 
@@ -44,12 +44,13 @@
     <repository>
       <id>local.repo</id>
       <name>file repository to svn</name>
-      <url>file://${user.home}/mavenrepo</url>
+      <url>file://${basedir}/mavenrepo</url>
     </repository>
     <snapshotRepository>
       <id>local.repo</id>
       <name>file repository to svn</name>
-      <url>file://${user.home}/mavenreposnapshot</url>    
+      <url>file://${basedir}/mavenreposnapshot</url>    
     </snapshotRepository>
   </distributionManagement>
+  
 </project>
