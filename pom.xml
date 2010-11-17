@@ -18,13 +18,8 @@
       <dependency>
         <groupId>com.mycompany.app</groupId>
         <artifactId>my-app</artifactId>
-        <version>${pom.version}</version>
+        <version>${project.version}</version>
       </dependency>
-      <dependency>
-        <groupId>com.mycompany.app</groupId>
-        <artifactId>my-app-webapp</artifactId>
-        <version>${pom.version}</version>
-      </dependency>      
     </dependencies>
   </dependencyManagement>
   <build>
@@ -52,5 +47,18 @@
       <url>file://${basedir}/mavenreposnapshot</url>    
     </snapshotRepository>
   </distributionManagement>
+  
+  <repositories>
+    <repository>
+      <id>test-release</id>
+      <url>https://olamy@github.com/olamy/scm-git-test.git/mavenrepo</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   
 </project>

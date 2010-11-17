@@ -2,7 +2,7 @@
   <parent>
     <artifactId>my-app-root</artifactId>
     <groupId>com.mycompany.app</groupId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
@@ -26,4 +26,17 @@
       <artifactId>my-app</artifactId>
     </dependency>
   </dependencies>
+  
+  <repositories>
+    <repository>
+      <id>test-release</id>
+      <url>https://olamy@github.com/olamy/scm-git-test.git/mavenrepo</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>  
 </project>
