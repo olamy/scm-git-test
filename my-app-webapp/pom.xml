@@ -7,6 +7,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app-webapp</artifactId>
+  <version>1.6-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Maven Webapp Archetype</name>
   <url>http://maven.apache.org</url>
@@ -24,6 +25,7 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
+      <version>1.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
   
