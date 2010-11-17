@@ -13,7 +13,7 @@
   <url>http://maven.apache.org</url>
   <scm>
     <connection>scm:git:git://github.com/olamy/scm-git-test.git/my-app-webapp</connection>
-    <developerConnection>scm:git:git://github.com/olamy/scm-git-test.git/my-app-webapp</developerConnection>
+    <developerConnection>scm:git:git@github.com:olamy/scm-git-test.git/my-app-webapp</developerConnection>
   </scm>
   <dependencies>
     <dependency>
