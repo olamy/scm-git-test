@@ -31,7 +31,7 @@
   
   <repositories>
     <repository>
-      <id>test-release</id>
+      <id>test-release-parent</id>
       <url>https://olamy@github.com/olamy/scm-git-test.git/mavenrepo</url>
       <releases>
         <enabled>true</enabled>
@@ -40,5 +40,17 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>test-release-app</id>
+      <url>https://olamy@github.com/olamy/scm-git-test.git/mavenrepo</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>    
   </repositories>  
+  
+  
 </project>
