@@ -51,7 +51,7 @@
   <repositories>
     <repository>
       <id>test-release</id>
-      <url>https://olamy@github.com/olamy/scm-git-test.git/mavenrepo</url>
+      <url>https://github.com/olamy/scm-git-test/tree/master/mavenrepo</url>
       <releases>
         <enabled>true</enabled>
       </releases>
