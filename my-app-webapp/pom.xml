@@ -25,7 +25,6 @@
     <dependency>
       <groupId>com.mycompany.app</groupId>
       <artifactId>my-app</artifactId>
-      <version>1.6</version>
     </dependency>
   </dependencies>
   
