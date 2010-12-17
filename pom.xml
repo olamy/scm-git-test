@@ -55,6 +55,11 @@
       <name>file repository to svn</name>
       <url>file://${basedir}/mavenreposnapshot</url>    
     </snapshotRepository>
+    <site>
+      <id>local-site</id>
+      <name>file repository to svn</name>
+      <url>file://${basedir}/target/site-deployed</url>      
+    </site>
   </distributionManagement>
   
   <repositories>
