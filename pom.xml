@@ -10,7 +10,7 @@
     <developerConnection>scm:git:git@github.com:olamy/scm-git-test.git</developerConnection>
   </scm>
   <modules>
-    <module>my-app</module>
+    <module>my-app-modules</module>
     <module>my-app-webapp</module>
   </modules>
   <dependencyManagement>
