@@ -4,7 +4,7 @@
   <artifactId>my-app-root</artifactId>
   <packaging>pom</packaging>
   <name>my-app-root</name>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.6</version>
   <scm>
     <connection>scm:git:git://github.com/olamy/scm-git-test.git/</connection>
     <developerConnection>scm:git:git@github.com:olamy/scm-git-test.git</developerConnection>
