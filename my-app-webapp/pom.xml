@@ -2,12 +2,11 @@
   <parent>
     <artifactId>my-app-root</artifactId>
     <groupId>com.mycompany.app</groupId>
-    <version>1.6-SNAPSHOT</version>
+    <version>1.7-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app-webapp</artifactId>
-  <version>1.7-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Maven Webapp Archetype</name>
   <url>http://maven.apache.org</url>
