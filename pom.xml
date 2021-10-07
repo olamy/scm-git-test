@@ -66,19 +66,19 @@
     <repository>
       <id>github</id>
       <name>GitHub olamy Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/olamy/maven-releases</url>
+      <url>file://${user.home}/test/maven-releases</url>
     </repository>
     <snapshotRepository>
       <id>github</id>
       <name>GitHub olamy Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/olamy/maven-snapshots</url>
+      <url>file://${user.home}/test/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
   <repositories>
     <repository>
       <id>test-release</id>
-      <url>https://maven.pkg.github.com/olamy/maven-releases</url>
+      <url>file://${user.home}/maven-releases</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -88,7 +88,7 @@
     </repository>
     <repository>
       <id>test-snapshots</id>
-      <url>https://maven.pkg.github.com/olamy/maven-snapshots</url>
+      <url>file://${user.home}/maven-snapshots</url>
       <releases>
         <enabled>false</enabled>
       </releases>
