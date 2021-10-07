@@ -5,11 +5,11 @@
   <artifactId>my-app-aggregator</artifactId>
   <packaging>pom</packaging>
   <name>my-app-aggregator</name>
-  <version>2.0.1</version>
+  <version>2.0.2-SNAPSHOT</version>
   <scm>
     <connection>scm:git:https://github.com/olamy/scm-git-test.git</connection>
     <developerConnection>scm:git:https://github.com/olamy/scm-git-test.git</developerConnection>
-    <tag>my-app-aggregator-2.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <maven.deploy.skip>true</maven.deploy.skip>
