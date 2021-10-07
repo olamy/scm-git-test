@@ -2,7 +2,7 @@
   <parent>
     <artifactId>my-app-root</artifactId>
     <groupId>com.mycompany.app</groupId>
-    <version>1.8</version>
+    <version>1.9-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
@@ -11,9 +11,9 @@
   <name>Maven Webapp Archetype</name>
   <url>http://maven.apache.org</url>
   <scm>
-    <connection>scm:git:git://github.com/olamy/scm-git-test.git</connection>
-    <developerConnection>scm:git:git@github.com:olamy/scm-git-test.git</developerConnection>
-    <tag>my-app-root-1.8</tag>
+    <connection>scm:git:https://github.com/olamy/scm-git-test.git</connection>
+    <developerConnection>scm:git:https://github.com/olamy/scm-git-test.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
   <dependencies>
     <dependency>
