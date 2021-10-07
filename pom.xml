@@ -56,31 +56,36 @@
   </build>
   <distributionManagement>
     <repository>
-      <id>local.repo</id>
-      <name>file repository to svn</name>
-      <url>file://${basedir}/mavenrepo</url>
+      <id>github</id>
+      <name>GitHub olamy Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/olamy/maven-releases</url>
     </repository>
     <snapshotRepository>
-      <id>local.repo</id>
-      <name>file repository to svn</name>
-      <url>file://${basedir}/mavenreposnapshot</url>    
+      <id>github</id>
+      <name>GitHub olamy Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/olamy/maven-snapshots</url>
     </snapshotRepository>
-    <site>
-      <id>local-site</id>
-      <name>file repository to svn</name>
-      <url>file://${basedir}/target/site-deployed</url>      
-    </site>
   </distributionManagement>
   
   <repositories>
     <repository>
       <id>test-release</id>
-      <url>https://github.com/olamy/scm-git-test/tree/master/mavenrepo</url>
+      <url>https://maven.pkg.github.com/olamy/maven-releases</url>
       <releases>
         <enabled>true</enabled>
       </releases>
       <snapshots>
         <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>test-snapshots</id>
+      <url>https://maven.pkg.github.com/olamy/maven-snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
       </snapshots>
     </repository>
   </repositories>
