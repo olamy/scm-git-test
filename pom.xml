@@ -2,147 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
-  <artifactId>my-app-root</artifactId>
+  <artifactId>my-app-aggregator</artifactId>
   <packaging>pom</packaging>
-  <name>my-app-root</name>
-  <version>1.9.5-SNAPSHOT</version>
+  <name>my-app-aggregator</name>
+  <version>2.0.0-SNAPSHOT</version>
   <scm>
     <connection>scm:git:https://github.com/olamy/scm-git-test.git</connection>
     <developerConnection>scm:git:https://github.com/olamy/scm-git-test.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
+  <properties>
+    <maven.deploy.skip>true</maven.deploy.skip>
+  </properties>
   <modules>
+    <module>my-app-root</module>
     <module>my-app-modules</module>
     <module>my-app-webapp</module>
   </modules>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.mycompany.app</groupId>
-        <artifactId>my-app</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
-          <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>3.0.0-M4</version>
-          <configuration>
-            <releaseProfiles>sonatype-release</releaseProfiles>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.3.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <version>3.2.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.0.1</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
-  <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>GitHub olamy Apache Maven Packages</name>
-      <url>file://${user.home}/test/maven-releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>github</id>
-      <name>GitHub olamy Apache Maven Packages</name>
-      <url>file://${user.home}/test/maven-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
-  <repositories>
-    <repository>
-      <id>test-release</id>
-      <url>file://${user.home}/maven-releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>test-snapshots</id>
-      <url>file://${user.home}/maven-snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-
-  <profiles>
-    <profile>
-      <id>sonatype-release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 
 </project>
