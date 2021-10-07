@@ -3,7 +3,7 @@
   <parent>
     <artifactId>my-app-root</artifactId>
     <groupId>com.mycompany.app</groupId>
-    <version>1.9.1-SNAPSHOT</version>
+    <version>1.9.4-SNAPSHOT</version>
   </parent>
 
   <artifactId>my-app-modules</artifactId>
