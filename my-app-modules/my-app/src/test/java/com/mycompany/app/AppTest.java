@@ -37,7 +37,7 @@ public class AppTest
     }
     public void testApp2() throws Exception
     {
-        Thread.sleep(30000);
+        Thread.sleep(3000);
         assertFalse( false );
     }
 }
