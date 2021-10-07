@@ -14,4 +14,9 @@
   <modules>
     <module>my-app</module>
   </modules>
+  <scm>
+    <connection>scm:git:https://github.com/olamy/scm-git-test.git</connection>
+    <developerConnection>scm:git:https://github.com/olamy/scm-git-test.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 </project>
