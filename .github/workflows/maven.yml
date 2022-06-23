@@ -18,7 +18,7 @@ jobs:
           java-version: 8
 
       - name:  Setup Maven
-        uses: stCarolas/setup-maven@v4.2
+        uses: stCarolas/setup-maven@v4.4
         with:
           maven-version: 3.8.4
 
